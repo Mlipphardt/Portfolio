@@ -79,9 +79,10 @@ html {
 
 .title {
   position: absolute;
-  top: 50%;
-  bottom: 50%;
+  bottom: 55%;
+  top: 45%;
   z-index: 100;
+  color: cyan;
 }
 
 .topWave {
