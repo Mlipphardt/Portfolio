@@ -1,5 +1,6 @@
 // Makes the banner and name show up upon page load, without scroll.
-$(document).ready(function(){
+/*
+$(document).ready(function () {
    $("#banner").addClass("visible");
    $("#namewrapper").addClass("visible");
 });
@@ -21,5 +22,4 @@ $(document).on("scroll", function () {
     }
     
 })
-
-    
+*/
