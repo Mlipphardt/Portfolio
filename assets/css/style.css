@@ -77,6 +77,13 @@ html {
   transform-origin: center bottom;
 }
 
+.title {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  z-index: 100;
+}
+
 .topWave {
   position: absolute;
   left: 0;
