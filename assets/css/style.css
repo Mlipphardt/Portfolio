@@ -101,11 +101,16 @@ html {
 }
 
 .waveAnimation .waveTop {
-  animation: move-wave 3s;
-  -webkit-animation: move-wave 3s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  animation: move_wave 3s linear infinite;
+  -webkit-animation: move_wave 3s linear infinite;
 }
+
+.waveAnimation .topWaveTop {
+  animation: move_wave 3s linear infinite;
+  -webkit-animation: move_wave 3s linear infinite;
+  animation-direction: reverse;
+}
+
 .waveMiddle,
 .topWaveMiddle {
   background-size: 50% 120px;
