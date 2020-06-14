@@ -1,0 +1,22 @@
+#test-button {
+  text-align: center;
+}
+
+#test-button:hover {
+  background-color: red;
+  height: 120px;
+  width: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+#test-button:hover #press-me {
+  display: none;
+}
+
+#test-button:hover:before {
+  content: "V";
+}
