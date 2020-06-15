@@ -5,17 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Button Test</title>
     <link rel="stylesheet" href="./assets/css/test.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <div
-      id="test-image"
-      style="
-        background-image: url('./assets/images/matthewlipphardtbackground.jpg');
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-lg-6"
+          id="test-image"
+          style="
+        background-image: url('./assets/images/mlpicpaintleft.jpg');
         background-position: right;
-        height: 200px;
-      "
-    >
-      hi
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+\      "
+        ></div>
+        <div
+          class="col-lg-6"
+          id="test-image"
+          style="
+            background-image: url('./assets/images/mlpicpaintright.jpg');
+            background-position: left;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+          "
+        ></div>
+      </div>
     </div>
   </body>
 </html>
