@@ -141,6 +141,7 @@ html {
 .topWaveMiddle {
   background-size: 50% 120px;
 }
+
 .waveAnimation .waveMiddle {
   animation: move_wave 10s linear infinite;
 }
