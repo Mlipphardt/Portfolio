@@ -163,3 +163,51 @@ html {
   animation: move_wave 15s linear infinite;
   animation-direction: reverse;
 }
+
+#test-image-left {
+  background-image: url("../images/mlpicpaintleft.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  height: 100vh;
+  animation: come_to_right linear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+#test-image-right {
+  background-image: url("../images/mlpicpaintright.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  opacity: 0;
+  animation: come_to_left linear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes come_to_right {
+  0% {
+    background-position: center;
+    opacity: 0;
+  }
+  100% {
+    background-position: right;
+    opacity: 1;
+  }
+}
+
+@keyframes come_to_left {
+  0% {
+    background-position: center;
+    opacity: 0;
+  }
+  100% {
+    background-position: left;
+    opacity: 1;
+  }
+}
