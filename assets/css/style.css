@@ -172,9 +172,9 @@ html {
   padding: 0;
   opacity: 0;
   height: 100vh;
-  animation: come_to_right linear;
+  /* animation: come_to_right linear;
   animation-duration: 1s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
 }
 
 #test-image-right {
@@ -185,6 +185,18 @@ html {
   padding: 0;
   height: 100vh;
   opacity: 0;
+  /* animation: come_to_left linear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; */
+}
+
+.come_to_right {
+  animation: come_to_right linear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.come_to_left {
   animation: come_to_left linear;
   animation-duration: 1s;
   animation-fill-mode: forwards;
