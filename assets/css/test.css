@@ -1,22 +1,41 @@
-#test-button {
-  text-align: center;
+#test-image-left {
+  background-image: url("../images/mlpicpaintleft.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  animation: come_to_right linear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
-#test-button:hover {
-  background-color: red;
-  height: 120px;
-  width: 120px;
-  line-height: 120px;
-  border-radius: 50%;
-  text-align: center;
-  overflow: hidden;
-  vertical-align: middle;
+#test-image-right {
+  background-image: url("../images/mlpicpaintright.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  animation: come_to_left linear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
-#test-button:hover #press-me {
-  display: none;
+@keyframes come_to_right {
+  0% {
+    background-position: center;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
-#test-button:hover:before {
-  content: "V";
+@keyframes come_to_left {
+  0% {
+    background-position: center;
+  }
+  100% {
+    background-position: left;
+  }
 }
