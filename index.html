@@ -20,6 +20,9 @@
     <script src="./assets/javascript/fadein.js"></script>
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="./assets/javascript/graph.js"></script>
     <title>Matthew Lipphardt</title>
   </head>
 
@@ -101,18 +104,21 @@
     <div class="container">
       <div class="row" style="margin-top: 315px;">
         <div
-          class="col-lg-6"
+          class="col-lg-3"
           id="test-image-left"
           data-animation="come_to_right"
         ></div>
         <div
-          class="col-lg-6"
+          class="col-lg-3"
           id="test-image-right"
           data-animation="come_to_left"
         ></div>
+        <div class="col-lg-6 d-flex flex-column align-items-center">
+          <canvas id="skills-donut" width="400" height="400"></canvas>
+        </div>
       </div>
       <div class="row">
-        <div class="col-lg-5 mx-auto text-center" data-animation="ease_up">
+        <div class="col-lg-6 text-center" data-animation="ease_up">
           <p id="profile-blurb">
             I'm a Fullstack Web Developer based out of Titusville, Florida.
             Adept at handling either back-end logic and databases, or creating a
@@ -176,5 +182,41 @@
         </div>
       </div>
     </div>
+    <script>
+      var ctx = document.getElementById("skills-donut");
+      var myChart = new Chart(ctx, {
+        type: "doughnut",
+        data: {
+          labels: [
+            "JavaScript",
+            "CSS",
+            "HTML",
+            "PHP",
+            "React",
+            "Node",
+            "MySQL",
+            "MongoDB",
+          ],
+          datasets: [
+            {
+              data: [20, 20, 20, 10, 10, 10, 5, 5],
+              backgroundColor: [
+                "blue",
+                "red",
+                "green",
+                "yellow",
+                "orange",
+                "purple",
+                "pink",
+                "violet",
+              ],
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+        },
+      });
+    </script>
   </body>
 </html>
