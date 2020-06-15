@@ -104,7 +104,6 @@ html {
 
 .title {
   position: absolute;
-  /* bottom: 50%; */
   top: 45%;
   z-index: 100;
   color: cyan;
@@ -172,10 +171,7 @@ html {
   margin: 0;
   padding: 0;
   opacity: 0;
-  height: 100vh;
-  /* animation: come_to_right linear;
-  animation-duration: 1s;
-  animation-fill-mode: forwards; */
+  height: 300px;
 }
 
 #test-image-right {
@@ -184,11 +180,8 @@ html {
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 300px;
   opacity: 0;
-  /* animation: come_to_left linear;
-  animation-duration: 1s;
-  animation-fill-mode: forwards; */
 }
 
 .come_to_right {
@@ -201,6 +194,24 @@ html {
   animation: come_to_left linear;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+}
+
+.ease_up {
+  color: black;
+  animation: ease_up linear forwards;
+  animation-duration: 1s;
+}
+
+@keyframes ease_up {
+  0% {
+    transform: translateY(25%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes come_to_right {
