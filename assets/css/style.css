@@ -202,6 +202,10 @@ html {
   animation-duration: 1s;
 }
 
+.skill-card {
+  margin-bottom: 25px;
+}
+
 @keyframes ease_up {
   0% {
     transform: translateY(25%);
