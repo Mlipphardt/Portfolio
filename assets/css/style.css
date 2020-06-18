@@ -202,6 +202,12 @@ html {
   animation-duration: 1s;
 }
 
+.fade-in {
+  color: black;
+  animation: fade-in linear forwards;
+  animation-duration: 1s;
+}
+
 .skill-card {
   margin-bottom: 25px;
   height: 220px;
@@ -219,6 +225,16 @@ html {
 
   100% {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
     opacity: 1;
   }
 }
