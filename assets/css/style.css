@@ -204,6 +204,11 @@ html {
 
 .skill-card {
   margin-bottom: 25px;
+  height: 220px;
+  background: url("../images/placeholder.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @keyframes ease_up {
