@@ -215,6 +215,12 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: transform 0.7s;
+}
+
+.skill-card:hover {
+  transform: scale(1.1) !important;
+  cursor: pointer;
 }
 
 @keyframes ease_up {
