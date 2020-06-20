@@ -157,6 +157,17 @@ html {
   color: white;
 }
 
+.modal.project .modal-dialog .modal-content {
+  width: 100vh;
+  margin: 0 auto;
+  height: 90vh;
+}
+.modal-img {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .modal-title {
   position: absolute;
   left: 50%;
