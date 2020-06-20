@@ -18,6 +18,30 @@ html {
   height: 100vh;
 }
 
+#name {
+  font-weight: bolder;
+}
+
+#test-image-left {
+  background-image: url("../images/mlpicpaintleft.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  height: 300px;
+}
+
+#test-image-right {
+  background-image: url("../images/mlpicpaintright.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  height: 300px;
+  opacity: 0;
+}
+
 #welcome-btn {
   transition: 1s;
   text-align: center;
@@ -49,38 +73,6 @@ html {
   border-width: 3px !important;
 }
 
-#name {
-  font-weight: bolder;
-}
-
-@keyframes move_wave {
-  0% {
-    transform: translateX(0) translateZ(0) scaleY(1);
-  }
-  50% {
-    transform: translateX(-25%) translateZ(0) scaleY(0.55);
-  }
-  100% {
-    transform: translateX(-50%) translateZ(0) scaleY(1);
-  }
-}
-.waveWrapper {
-  overflow: hidden;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  margin: auto;
-}
-.waveWrapperInner {
-  position: absolute;
-  width: 100%;
-  overflow: hidden;
-  height: 100%;
-  bottom: -1px;
-  background-image: linear-gradient(#86377b, #27273c, #86377b);
-}
 .bgTop {
   z-index: 15;
   opacity: 0.5;
@@ -102,6 +94,48 @@ html {
   transform-origin: center bottom;
 }
 
+.card-project-title {
+}
+
+.come_to_right {
+  animation: come_to_right linear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.come_to_left {
+  animation: come_to_left linear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.ease_up {
+  color: black;
+  animation: ease_up linear forwards;
+  animation-duration: 1s;
+}
+
+.fade-in {
+  color: black;
+  animation: fade-in linear forwards;
+  animation-duration: 1s;
+}
+
+.skill-card {
+  margin-bottom: 25px;
+  height: 220px;
+  background: url("../images/placeholder.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.7s;
+}
+
+.skill-card:hover {
+  transform: scale(1.07) !important;
+  cursor: pointer;
+}
+
 .title {
   position: absolute;
   top: 45%;
@@ -118,6 +152,24 @@ html {
   background-repeat: repeat no-repeat;
   background-position: 0 top;
   transform-origin: center top;
+}
+
+.waveWrapper {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+.waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+  background-image: linear-gradient(#86377b, #27273c, #86377b);
 }
 
 .waveTop,
@@ -164,87 +216,6 @@ html {
   animation-direction: reverse;
 }
 
-#test-image-left {
-  background-image: url("../images/mlpicpaintleft.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
-  opacity: 0;
-  height: 300px;
-}
-
-#test-image-right {
-  background-image: url("../images/mlpicpaintright.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
-  height: 300px;
-  opacity: 0;
-}
-
-.come_to_right {
-  animation: come_to_right linear;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-
-.come_to_left {
-  animation: come_to_left linear;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-
-.ease_up {
-  color: black;
-  animation: ease_up linear forwards;
-  animation-duration: 1s;
-}
-
-.fade-in {
-  color: black;
-  animation: fade-in linear forwards;
-  animation-duration: 1s;
-}
-
-.skill-card {
-  margin-bottom: 25px;
-  height: 220px;
-  background: url("../images/placeholder.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: transform 0.7s;
-}
-
-.skill-card:hover {
-  transform: scale(1.1) !important;
-  cursor: pointer;
-}
-
-@keyframes ease_up {
-  0% {
-    transform: translateY(25%);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes come_to_right {
   0% {
     background-position: center;
@@ -264,5 +235,38 @@ html {
   100% {
     background-position: left;
     opacity: 1;
+  }
+}
+
+@keyframes ease_up {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes move_wave {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.55);
+  }
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1);
   }
 }
