@@ -18,8 +18,28 @@ html {
   height: 100vh;
 }
 
+#fanfixx-card {
+  background-image: url("../images/fanfixx.png");
+}
+
+#hagglehaus-card {
+  background-image: url("../images/hagglehaus.png");
+}
+
+#memorygame-card {
+  background-image: url("../images/memorygame.png");
+}
+
 #name {
   font-weight: bolder;
+}
+
+#newsscraper-card {
+  background-image: url("../images/newsscraper.png");
+}
+
+#spartanfit-card {
+  background-image: url("../images/SpartanFit.png");
 }
 
 #test-image-left {
@@ -67,6 +87,10 @@ html {
 
 #welcome-btn:hover:before {
   content: "V";
+}
+
+#yourlibrary-card {
+  background-image: url("../images/yourlibrary.png");
 }
 
 .border {
@@ -134,6 +158,8 @@ html {
   position: absolute;
   bottom: 5px;
   transition: background-color 0.3s;
+  border-color: black;
+  border-width: 1px;
 }
 
 .learn-more-btn:hover {
