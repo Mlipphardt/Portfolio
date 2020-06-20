@@ -95,6 +95,10 @@ html {
 }
 
 .card-project-title {
+  background-color: rgba(128, 80, 80, 0.6);
+  font-weight: bolder;
+  font-size: x-large;
+  width: 100%;
 }
 
 .come_to_right {
@@ -119,6 +123,23 @@ html {
   color: black;
   animation: fade-in linear forwards;
   animation-duration: 1s;
+}
+
+.learn-more-btn {
+  font: x-large;
+  font-weight: bold;
+  background-color: royalblue;
+  color: black;
+  width: 37%;
+  position: absolute;
+  bottom: 5px;
+  transition: background-color 0.3s;
+}
+
+.learn-more-btn:hover {
+  background-color: blue;
+  font: x-large;
+  color: white;
 }
 
 .skill-card {
