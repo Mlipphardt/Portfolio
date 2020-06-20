@@ -12,6 +12,7 @@ div.visible {
 
 html {
   min-height: 100%;
+  scroll-behavior: smooth;
 }
 
 #banner {

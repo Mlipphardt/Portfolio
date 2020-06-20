@@ -90,7 +90,7 @@
           Matthew Lipphardt, Fullstack Web Developer
         </h3>
         <button id="welcome-btn" class="d-flex flex-column align-items-center">
-          <span class="d-flex">Learn More</span>
+          <span class="d-flex"><a href="#about">Learn More</href></span>
         </button>
       </div>
       <div class="waveWrapper waveAnimation">
@@ -148,18 +148,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#"
-            >Home <span class="sr-only">(current)</span></a
-          >
-          <a class="nav-item nav-link" href="#">About</a>
-          <a class="nav-item nav-link" href="#">Portfolio</a>
-          <a class="nav-item nav-link" href="#">Contact</a>
+          <a class="nav-item nav-link" href="#banner">Home </a>
+          <a class="nav-item nav-link" href="#about">About</a>
+          <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+          <a class="nav-item nav-link" href="#contact">Contact</a>
         </div>
       </div>
     </nav>
 
     <div class="container">
-      <div class="row" style="margin-top: 215px;">
+      <div class="row" id="about" style="margin-top: 215px;">
         <div class="col-lg-6">
           <div class="row">
             <!-- Profile Picture -->
@@ -192,7 +190,11 @@
         </div>
       </div>
       <!-- Portfolio start -->
-      <div class="row text-center mb-4" style="margin-top: 215px;">
+      <div
+        class="row text-center mb-4"
+        id="portfolio"
+        style="margin-top: 215px;"
+      >
         <div data-animation="fade-in" class="col-lg-4 mx-auto">
           <u><h1>Projects</h1></u>
         </div>
@@ -289,7 +291,7 @@
           </div>
         </div>
       </div>
-      <div class="row" style="margin-top: 215px;">
+      <div class="row" id="contact" style="margin-top: 215px;">
         <div class="col-md-12 jumbotron border border-dark rounded">
           <h1 class="display-4">Contact Me</h1>
           <ul class="links">
