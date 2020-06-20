@@ -157,6 +157,13 @@ html {
   color: white;
 }
 
+.modal-title {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0%);
+}
+
 .skill-card {
   margin-bottom: 25px;
   height: 220px;
