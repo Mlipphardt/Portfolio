@@ -144,6 +144,10 @@ html {
   animation-fill-mode: forwards;
 }
 
+.contact-row {
+  opacity: 0;
+}
+
 .ease_up {
   color: black;
   animation: ease_up linear forwards;
@@ -193,6 +197,14 @@ html {
   transform: translate(-50%, 0%);
 }
 
+.portfolio-title {
+  opacity: 0;
+}
+
+.profile-column {
+  opacity: 0;
+}
+
 .skill-card {
   margin-bottom: 25px;
   height: 220px;
@@ -201,6 +213,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   transition: transform 0.7s;
+  opacity: 0;
 }
 
 .skill-card:hover {
@@ -313,6 +326,7 @@ html {
 @keyframes ease_up {
   0% {
     opacity: 0;
+    transform: translateY(25%);
   }
 
   100% {
