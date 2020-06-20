@@ -75,12 +75,29 @@ html {
 
 #welcome-btn:hover {
   background-color: blue;
-  color: cyan;
   vertical-align: middle;
+}
+
+#welcome-link {
+  color: black;
+}
+
+#welcome-link:hover {
+  color: cyan;
 }
 
 #yourlibrary-card {
   background-image: url("../images/yourlibrary.png");
+}
+
+.anchor {
+  position: absolute;
+  top: -85px;
+}
+
+.anchor-row {
+  position: relative;
+  margin-top: 215px;
 }
 
 .border {

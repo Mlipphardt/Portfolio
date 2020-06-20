@@ -90,7 +90,7 @@
           Matthew Lipphardt, Fullstack Web Developer
         </h3>
         <button id="welcome-btn" class="d-flex flex-column align-items-center">
-          <span class="d-flex"><a href="#about">Learn More</href></span>
+          <span class="d-flex"><a id="welcome-link" href="#about" style="text-decoration: none">Learn More</href></span>
         </button>
       </div>
       <div class="waveWrapper waveAnimation">
@@ -157,7 +157,9 @@
     </nav>
 
     <div class="container">
-      <div class="row" id="about" style="margin-top: 215px;">
+      <div class="row anchor-row mb-3" style="margin-top: 180px;">
+        <span id="about" class="anchor"></span>
+        <span id="about-from-top" style="position: absolute; top: -40px;"></span>
         <div class="col-lg-6">
           <div class="row">
             <!-- Profile Picture -->
@@ -191,11 +193,11 @@
       </div>
       <!-- Portfolio start -->
       <div
-        class="row text-center mb-4"
-        id="portfolio"
-        style="margin-top: 215px;"
+        class="row anchor-row text-center mb-4"
       >
-        <div data-animation="fade-in" class="col-lg-4 mx-auto">
+      <span id="portfolio" class="anchor"></span>
+
+      <div data-animation="fade-in" class="col-lg-4 mx-auto">
           <u><h1>Projects</h1></u>
         </div>
       </div>
@@ -291,7 +293,8 @@
           </div>
         </div>
       </div>
-      <div class="row" id="contact" style="margin-top: 215px;">
+      <div class="anchor-row">
+       <span id="contact" class="anchor"></span>
         <div class="col-md-12 jumbotron border border-dark rounded">
           <h1 class="display-4">Contact Me</h1>
           <ul class="links">
