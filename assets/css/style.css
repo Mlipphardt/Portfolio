@@ -97,7 +97,7 @@ html {
 
 .anchor-row {
   position: relative;
-  margin-top: 215px;
+  margin-top: 175px;
 }
 
 .border {
@@ -145,7 +145,7 @@ html {
 }
 
 .contact-row {
-  opacity: 0;
+  opacity: 1;
 }
 
 .ease_up {

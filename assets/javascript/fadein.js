@@ -15,7 +15,7 @@ $(document).ready(function () {
   $(document).on("scroll", function () {
     var pageTop = $(document).scrollTop();
     var pageBottom = pageTop + $(window).height();
-    var tags = $("div");
+    var tags = $("div.animated");
     var anchors = $("span.anchor");
 
     for (let i = 0; i < anchors.length; i++) {
@@ -72,10 +72,7 @@ $(document).ready(function () {
     for (let i = 0; i < tags.length; i++) {
       let tag = tags[i];
 
-      if (
-        $(tag).offset().top + $(tag).outerHeight() < pageBottom &&
-        $(tag).attr("data-animation")
-      ) {
+      if ($(tag).offset().top + $(tag).outerHeight() < pageBottom) {
         $(tag).addClass($(tag).attr("data-animation"));
       }
     }
