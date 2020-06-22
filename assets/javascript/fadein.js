@@ -1,11 +1,31 @@
 let chartDrawn = false;
 
+function removeActive() {
+  var links = $("a.nav-item");
+  for (let i = 0; i < links.length; i++) {
+    let link = links[i];
+    if ($(link).hasClass("active")) {
+      $(link).removeClass("active");
+    }
+  }
+}
+
 //After document has loaded, detect scrolling and see if animated elements need to fire.
 $(document).ready(function () {
   $(document).on("scroll", function () {
     var pageTop = $(document).scrollTop();
     var pageBottom = pageTop + $(window).height();
     var tags = $("div");
+    var anchors = $("span.anchor");
+
+    for (let i = 0; i < anchors.length; i++) {
+      let anchor = anchors[i];
+      let links = $("a.nav-item");
+      if ($(anchor).offset().top + $(anchor).outerHeight() < pageBottom) {
+        removeActive();
+        $(links[i + 1]).addClass("active");
+      }
+    }
 
     if (
       $("#skills-donut").offset().top + $("#skills-donut").outerHeight() <
