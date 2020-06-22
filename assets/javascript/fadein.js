@@ -23,7 +23,7 @@ $(document).ready(function () {
       let links = $("a.nav-item");
       if ($(anchor).offset().top + $(anchor).outerHeight() < pageBottom) {
         removeActive();
-        $(links[i + 1]).addClass("active");
+        $(links[i]).addClass("active");
       }
     }
 

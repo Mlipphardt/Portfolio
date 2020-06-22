@@ -43,24 +43,24 @@ html {
   background-image: url("../images/SpartanFit.png");
 }
 
-#test-image-left {
+#profile-image-left {
   background-image: url("../images/mlpicpaintleft.jpg");
   background-position: center;
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
-  opacity: 1;
+  opacity: 0;
   height: 300px;
 }
 
-#test-image-right {
+#profile-image-right {
   background-image: url("../images/mlpicpaintright.jpg");
   background-position: center;
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   height: 300px;
-  opacity: 1;
+  opacity: 0;
 }
 
 #welcome-btn {
