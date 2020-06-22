@@ -186,8 +186,10 @@ html {
 }
 .modal-img {
   height: 100%;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
 }
 
 .modal-title {

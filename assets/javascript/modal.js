@@ -15,7 +15,7 @@ let projects = [
     "The application is powered by the MERN stack, and uses Chart.js to create visual representations of data. ",
     "https://github.com/Mlipphardt/SpartanFit",
     "https://spartanfit.herokuapp.com/",
-    "./assets/images/SpartanFitDemo.png"
+    "./assets/images/spartanfitdemo.gif"
   ),
   new Project(
     "Your Library",
@@ -55,7 +55,7 @@ let projects = [
     "Deep Sea Memory Game utilizes React, and also features the Fischer-Yates shuffle. ",
     "https://github.com/Mlipphardt/Memory-Game",
     "https://mlipphardt.github.io/Memory-Game/",
-    "./assets/images/MemoryGameDemo.png"
+    "./assets/images/memorygamedemo.gif"
   ),
 ];
 
