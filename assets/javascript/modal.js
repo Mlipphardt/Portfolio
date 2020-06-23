@@ -23,7 +23,7 @@ let projects = [
     "Your Library is a MERN-stack application with Bootstrap CSS.",
     "https://github.com/Mlipphardt/Your-Library",
     "https://yourownlibrary.herokuapp.com/",
-    "./assets/images/YourLibraryDemo.png"
+    "./assets/images/yourlibrarydemo.gif"
   ),
   new Project(
     "Haggle-Haus",
@@ -39,7 +39,7 @@ let projects = [
     "Centralized News uses MongoDB to store its notes and articles, Mongoose as an ORM, Node.js for its server, and Cheerio for its web-scraping.",
     "https://github.com/Mlipphardt/News-Scraper/",
     "https://centralized-news.herokuapp.com/",
-    "./assets/images/CentralizedNewsDemo.png"
+    "./assets/images/centralizednewsdemo.gif"
   ),
   new Project(
     "FanFixx",
