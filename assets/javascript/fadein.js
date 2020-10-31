@@ -39,9 +39,8 @@ $(document).ready(function () {
         data: {
           labels: [
             "JavaScript",
-            "CSS",
-            "HTML",
-            "PHP",
+            "HTML/CSS",
+            "Python",
             "React",
             "Node",
             "MySQL",
@@ -49,7 +48,7 @@ $(document).ready(function () {
           ],
           datasets: [
             {
-              data: [20, 20, 20, 5, 10, 10, 5, 10],
+              data: [30, 20, 10, 10, 10, 10, 5],
               backgroundColor: [
                 "blue",
                 "red",
